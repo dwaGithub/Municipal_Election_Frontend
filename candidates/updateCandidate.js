@@ -39,7 +39,7 @@ function updateCandidateInDB(candidateId) {
         gender: document.getElementById(`update-candidate-gender-${candidateId}`).value,
         municipal: document.getElementById(`update-candidate-municipal-${candidateId}`).value,
         personalVotes: document.getElementById(`update-candidate-personalVotes-${candidateId}`).value,
-        party_id: {partyId: document.getElementById(`update-candidate-partyId-${candidateId}`)}.value
+        party: {partyId: document.getElementById(`update-candidate-partyId-${candidateId}`)}.value
     };
     fetch(baseURL + "/candidates/" + candidateId, {
         method: "PATCH",
