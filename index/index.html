@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../global/global.css">
+    <title>Kommunalvalg 2021</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">
+            <img id="logo" src="../kommunalvalg_logo.png" alt="kommunalvalg logo">
+        </a>
+        <a href="index.html">Hjem</a>
+        <a href="../election_result/election_result.html">Resultat</a>
+    </nav>
+    <h2>Kommunalvalget 2021 - Samsø</h2>
+    <br>
+
+
+
+<h3>Alle kandidater</h3>
+    <h4>Sorter tabellen ud fra partier, ved at trykke på 'parti'</h4>
+    <table id="candidate-tbody">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Navn</th>
+                <th>Køn</th>
+                <th>Kommune</th>
+                <th>Antal stemmer</th>
+                <th>Parti</th>
+                <th>Rediger/slet</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+        <div class="container">
+            <button id="expand-candidate-form">Ny Kandidat ➕</button>
+            <div id="create-candidate-form"></div>
+        </div>
+
+<script src="index.js"></script>
+    <script src="../global/global.js"></script>
+    <script src="/candidates/createCandidate.js"></script>
+    <script src="/candidates/updateCandidate.js"></script>
+</body>
+</html>
